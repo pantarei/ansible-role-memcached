@@ -1,0 +1,8 @@
+---
+# defaults file for hswong3i.memcached
+
+memcached_connections: "1024"
+memcached_listen_host: "0.0.0.0"
+memcached_listen_port: "11211"
+memcached_logfile: "/var/log/memcached.log"
+memcached_memory: "64"
