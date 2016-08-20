@@ -25,7 +25,9 @@
 
 - name: enable service
   service:
-    name: "memcached"
-    enabled: "yes"
+    name: "{{ item.name }}"
+    enabled: "{{ item.enabled }}"
+  with_items:
+    - { name: "memcached", enabled: "yes" }
   notify: restart memcached
   tags: hswong3i.memcached
